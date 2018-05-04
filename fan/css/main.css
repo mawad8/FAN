@@ -1,0 +1,109 @@
+.all{
+    border: 4px solid black;
+    border-radius: 50%;
+}
+
+#myDIV {
+    margin-top: 30%;
+    margin-left: 51%;
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    background-color: coral;
+    color: white;
+    -webkit-animation: rightmove 5s infinite; /* Chrome, Safari, Opera */
+    animation: rightmove 0.2s infinite;
+}
+#mydiv2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+    width: 20px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    -webkit-animation: topmove 5s infinite; /* Chrome, Safari, Opera */
+    animation: topmove 0.2s infinite;
+}
+#mydiv3 {
+    position: absolute;
+    top: 63.5%;
+    left: 43%;
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    -webkit-animation: leftmove 5s infinite; /* Chrome, Safari, Opera */
+    animation: leftmove 0.2s infinite;
+}
+#mydiv4 {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    border: 1px solid black;
+    width: 20px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    -webkit-animation: bottommove 5s infinite; /* Chrome, Safari, Opera */
+    animation: bottommove 0.2s infinite;
+}
+
+/*qChrome, Safari, Opera */
+@-webkit-keyframes rightmove {
+
+    50% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes rightmove {
+100%{transform-origin: left;}
+	100%{transition: all 1s linear;}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+@-webkit-keyframes topmove {
+transform-origin: bottom;
+    transition: all .1s linear;
+    50% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes topmove {
+100%{transform-origin: bottom;}
+    100%{transition: all 1s linear;}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+@-webkit-keyframes leftmove {
+transform-origin: bottom;
+    transition: all .1s linear;
+    50% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes leftmove {
+100%{transform-origin: right;}
+    100%{transition: all 1s linear;}
+    100% {transform: rotate(360deg);}
+}
+
+
+@-webkit-keyframes bottommove {
+transform-origin: bottom;
+    transition: all .1s linear;
+    50% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes bottommove {
+100%{transform-origin: top;}
+    100%{transition: all 1s linear;}
+    100% {transform: rotate(360deg);}
+}
